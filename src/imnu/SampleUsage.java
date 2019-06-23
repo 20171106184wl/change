@@ -93,7 +93,7 @@ public String pointToLatlong (String point ) {
 
 public static void main(String[] args)
 {
-    ImgInfoBean imgInfoBean = new SampleUsage().parseImgInfo("C:\\DSC_4564.JPG");
+    ImgInfoBean imgInfoBean = new SampleUsage().parseImgInfo("F:/mypicture/IMG_20180214_153541_mh1519724709731.jpg");
     System.out.println(imgInfoBean.toString());
 }
  
