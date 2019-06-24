@@ -3,21 +3,37 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.*;
 import java.awt.*;
+
+
 public class DrawLine extends JPanel {
 	public List<Position>point=new ArrayList<Position>();
-	
+
 	public static void main(String[] args) {
+		
+		
 		JFrame frame = new JFrame("DrawLine");
 		frame.getContentPane().add(new DrawLine());
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(300, 200);
+		frame.setLocation(200, 100); 
+		frame.setSize(600, 600);
 		frame.setVisible(true);
 		
+		
+		
+        
 		}
 		public void paintComponent(Graphics g) {
+			
+			
+			
+			
 			super.paintComponent(g);
 			DrawLine position=new DrawLine();
 			
+			 ImgInfoBean imgInfoBean = new SampleUsage().parseImgInfo("F:/IMG_20190624_084415.jpg");
+			 float latitude=imgInfoBean.getLatitudeNumber();
+			 float longitude=imgInfoBean.getLongitudeNumber();
+			 System.out.println(latitude+"  "+longitude);
 			
 			int number1=10;
 			int number2=2;

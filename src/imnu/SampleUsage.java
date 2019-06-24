@@ -93,8 +93,11 @@ public String pointToLatlong (String point ) {
 
 public static void main(String[] args)
 {
-    ImgInfoBean imgInfoBean = new SampleUsage().parseImgInfo("F:/mypicture/IMG_20180214_153541_mh1519724709731.jpg");
-    System.out.println(imgInfoBean.toString());
+    ImgInfoBean imgInfoBean = new SampleUsage().parseImgInfo("F:/IMG_20190624_084415.jpg");
+    float latitude=imgInfoBean.getLatitudeNumber();
+    float longitude=imgInfoBean.getLongitudeNumber();
+    System.out.println(latitude+"  "+longitude);
+   // System.out.println(imgInfoBean.toString());
 }
  
 
